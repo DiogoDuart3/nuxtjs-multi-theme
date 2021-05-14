@@ -3,7 +3,5 @@
 </template>
 
 <script>
-export default {
-  layout: 'theme1',
-}
+export default {}
 </script>

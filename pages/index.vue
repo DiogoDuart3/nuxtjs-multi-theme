@@ -6,7 +6,7 @@
 </template>
 
 <script>
-const _theme = 'theme2'
+const _theme = 'theme1'
 
 export default {
   layout(context) {
@@ -17,7 +17,7 @@ export default {
     theme: null,
   }),
   async fetch() {
-    this.theme = await 'Theme2'
+    this.theme = await 'Theme1'
   },
   fetchOnServer: true,
 }

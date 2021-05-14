@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="theme-theme2">
     <ThemesTheme2Header />
     <Nuxt />
   </div>
@@ -10,13 +10,15 @@ export default {
   head() {
     return {
       title: 'Tema 2',
-      link: [
-        {
-          rel: 'stylesheet',
-          href: require('~/assets/theme2/main.scss'),
-        },
-      ],
     }
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.theme-theme2 {
+  &::v-deep {
+    @import '~/assets/theme2/main.scss';
+  }
+}
+</style>

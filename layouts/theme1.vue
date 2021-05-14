@@ -11,15 +11,15 @@ export default {
   head() {
     return {
       title: 'Tema 1',
-      link: [
-        {
-          rel: 'stylesheet',
-          href: require('~/assets/theme1/main.scss'),
-        },
-      ],
     }
   },
 }
 </script>
 
-<style lang="scss" scoped />
+<style lang="scss" scoped>
+.theme-theme1 {
+  &::v-deep {
+    @import '~/assets/theme1/main.scss';
+  }
+}
+</style>
